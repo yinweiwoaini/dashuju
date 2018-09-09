@@ -1,0 +1,232 @@
+/*
+* @Author: 123
+* @Date:   2018-09-07 19:58:16
+* @Last Modified by:   123
+* @Last Modified time: 2018-09-08 17:10:06
+*/
+*{
+	box-sizing: border-box;
+	font-family: "苹方";
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/background.png');
+	background-size: 100% 100%;
+}
+.FYD_box{
+	width: 761px;
+	height: 512px;
+	/* background: pink; */
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+}
+.FYD_box .FYD_box-left{
+	width: 401px;
+	height: 100%;
+	/* background: pink; */
+	position: relative;
+}
+.FYD_box .FYD_box-left img{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+.FYD_box .FYD_box-left .FYD_box-welcome{
+	position: absolute;
+	top: 64px;
+	left: 48px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+
+}
+.FYD_box .FYD_box-left .FYD_box-DSJ{
+	top: 81px;
+	left: 48px;
+	font-size: 30px;
+	letter-spacing: 5px;
+}
+.FYD_box .FYD_box-left .FYD_box-first{
+	position: absolute;
+	top: 130px;
+	left: 48px;
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	border-radius: 50%;
+} 
+.FYD_box .FYD_box-left .second{
+	left: 60px;
+	background: #c3cbe1;
+}
+.FYD_box .FYD_box-left .third{
+	left: 72px;
+	background: #9ba9cd;
+}
+.FYD_box .FYD_box-right{
+	padding: 0 50px 28px;
+	width: 360px;
+	height: 480px;
+	background: #fff;
+	margin:auto 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.FYD_box .FYD_box-right .FYD_box-img{
+	width: 100%;
+	height: 90px;
+	/* background: yellow; */
+	margin-top: 28px;
+	display: flex;
+	justify-content: center;
+}
+.FYD_box .FYD_box-right .FYD_box-img img{
+	width: 90px;
+	height: 90px;
+}
+.FYD_box .FYD_box-right .FYD_box-list{
+	width: 100%;
+	height: calc(100% - 118px);
+	/* background: orange; */
+}
+.FYD_box .FYD_box-right .FYD_box-list ul{
+	width: 100%;
+	/* height: 100%; */
+}
+.FYD_box .FYD_box-right .FYD_box-list .all{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 44px;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 44px;
+	border-bottom: 1.5px solid #b4cdf5;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li .logo1{
+	width: 16px;
+	height: 18px;
+	margin-top: 18px;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li .logo2{
+	width: 16px;
+	height: 12px;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li .logo3{
+	width: 14px;
+	height: 18px;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li input{
+	margin-left: 25px;
+	margin-top: 11px;
+	height: 30px;
+	outline: none;
+	border: none;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li .name{
+	margin-left: 27px;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul li input::-webkit-input-placeholder{
+	color: #d3def8;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul .all .small{
+	width: 140px;
+}
+.FYD_box .FYD_box-right .FYD_box-list ul .all .FYD_button{
+	width: 102px;
+	height: 30px;
+	margin-top: 13.5px;
+	margin-left: 20px;
+	border: 1.5px solid #b4cdf5;
+	border-radius: 4px;
+	background: #fff;
+	text-align: center;
+	line-height: 30px;
+	color: #8bacee;
+	letter-spacing: 4px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: "San Francisco Display";
+	outline: none;
+	cursor: pointer;
+}
+.FYD_box .FYD_box-right .FYD_submit{
+	width: 100%;
+	height: 30px;
+	border: none;
+	margin-top: 32px;
+	background: linear-gradient(to right,#4382e6,#30c1fb);
+	border-radius: 4px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.FYD_box .FYD_box-right .FYD_shadow{
+	width: 100%;
+	height: 12px;
+	background-image: url('../img/shadow.png');
+	background-position: 0 16px;
+}
+.FYD_box .FYD_box-right a{
+	text-decoration: none;
+}
+.FYD_box .FYD_box-right a p{
+	text-align: center;
+	font-size: 14px;
+	color: #8bacee;
+	margin-top: 22px;
+}
+.FYD_alert{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 454px;
+	height: 220px;
+	background-color: #fff;
+	box-shadow: 0 0 2px 1000px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	display: none;
+}
+.FYD_alert .FYD_text{
+	text-align: center;
+	line-height: 220px;
+	font-size: 14px;
+	color: #dddddd;
+	font-weight: bold;
+}
+.FYD_alert i{
+	color: #ffbe22;
+	margin-top: 5px;
+	font-size: 10px;
+	font-weight: normal;
+	position: absolute;
+	top: 100px;
+	left: 114px;
+}
+.FYD_alert .FYD_close{
+	position: absolute;
+	top: 10px;
+	right: 18px;
+	font-size: 14px;
+	color: #dddddd;
+	cursor: pointer;
+}

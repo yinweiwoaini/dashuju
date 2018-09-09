@@ -1,0 +1,290 @@
+html{
+    background: #f1f4f9;
+}
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    padding: 0 15px 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .left{
+    display: flex;
+}
+header .left img{
+    width: 35px;
+    height: 36px;
+}
+header .left h1{
+    font-family:"苹方";
+    font-size: 16px;
+    color: #fff;
+    margin-left: 12px;
+    line-height: 36px;
+}
+header .right{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right img{
+    width: 28px;
+    height: 28px;
+}
+header .right h2{
+    font-family:"苹方";
+    font-size: 16px;
+    color: #fff;
+    margin-left: 7px;
+    line-height: 36px;
+}
+header .right .icon{
+    width: 10px;
+    height: 10px;
+    margin-left: 12px;
+}
+header .right .icon i{
+    font-size: 5px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+main{
+    height: calc(100% - 108px;);
+    display: flex;
+}
+main .list{
+    background: #fff;
+}
+main .list  p{
+    font-family:"苹方";
+    font-size: 14px;
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #f4f4f4;
+    width: 180px;
+    height: 39px;
+}
+main .list  p:hover{
+    cursor: pointer;
+}
+main .list  p.active{
+    color:#4381e6 ;
+    background: rgba(67,129,230,0.1);
+    border-right: 2px solid #4381e6;
+}
+/*右侧内容css*/
+main .zy_content{
+    width: calc(100% - 180px);
+    height: 628px;
+    padding:15px 15px 0;
+}
+main .zy_content .zy_news{
+    width: 100%;
+    height: 112px;
+    border-radius: 3px;
+    background: #fff;
+    padding-left: 30px;
+}
+main .zy_content .zy_news .zy_order{
+    width: 100%;
+    height: 38px;
+}
+main .zy_content .zy_news .zy_order .zy_vertical{
+    width: 2px;
+    height: 11px;
+    background: linear-gradient(#6787ff,#33bffb);
+    margin: 26px 8px 0 0;
+    float: left;
+}
+main .zy_content .zy_news .zy_order p{
+    font-size: 14px;
+    color: #797979;
+    float: left;
+    margin-top: 22px;
+}
+main .zy_content .zy_news .zy_info{
+    width: 100%;
+    height: 74px;
+    padding-top: 20px;
+}
+main .zy_content .zy_news .zy_info form{
+    width: 145px;
+    height: 30px;
+    color: #797979;
+    font-size: 14px;
+    line-height: 30px;
+    margin-right: 20px;
+    float: left;
+}
+main .zy_content .zy_news .zy_info form .zy_type{
+    width: 78px;
+    height: 29px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #797979;
+    position: relative;
+    float: right;
+}
+main .zy_content .zy_news .zy_info form .zy_type select{
+    outline: none;
+    resize: none;
+    border: 1px solid #f5f5f5;
+    width: 100%;
+    height: 100%;
+    line-height: 29px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 8px;
+    color: #797979;
+    font-size: 14px;
+}
+main .zy_content .zy_news .zy_info form .zy_type:after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: url('../img/pull-down.png');
+    position: absolute;
+    right: 5px;
+    bottom: 12px;
+    pointer-events: none;
+}
+main .zy_content .zy_news .zy_info form.zy_use{
+    width: 174px;
+}
+main .zy_content .zy_news .zy_info form input{
+    width: 78px;
+    height: 29px;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+main .zy_content .zy_news .zy_info .zy_search{
+    width: 111px;
+    height: 29px;
+    border-radius: 2px;
+    background: #4381e6;
+    font-size: 14px;
+    line-height: 29px;
+    text-align: center;
+    float: right;
+    margin-right: 29px;
+}
+main .zy_content .zy_news .zy_info .zy_search a{
+    color: #fff;
+}
+main .zy_content .zy_details{
+    width: 100%;
+    height: 340px;
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding:33px 30px 0 30px;
+}
+main .zy_content .zy_details table{
+    border: 1px solid #f4f4f4;
+    border-radius: 2px;
+}
+main .zy_content .zy_details table td{
+    height: 54px;
+    border: 1px solid #f4f4f4;
+    font-size: 14px;
+    color: #999;
+    line-height: 54px;
+    text-align: center;
+    padding: 0 19px 0 18px;
+}
+main .zy_content .zy_details table td.zy_title{
+    color: #666;
+}
+main .zy_content .zy_details table td .zy_del{
+    width: 59px;
+    height: 29px;
+    background: #4381e6;
+    border-radius: 2px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 29px;
+}
+main .zy_content .zy_details table td .zy_del a{
+    color: #fff;
+}
+main .zy_content .zy_details .zy_page{
+    width: 522px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+main .zy_content .zy_details .zy_page .zy_next{
+    width: 94px;
+    height: 27px;
+    border-radius: 2px;
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    font-size: 14px;
+    line-height: 27px;
+    float: left;
+    margin-right: 9px;
+}
+main .zy_content .zy_details .zy_page .zy_num{
+    width: 27px;
+    height: 27px;
+    border-radius: 2px;
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    line-height: 27px;
+    float: left;
+    margin-right: 9px;
+}
+main .zy_content .zy_details .zy_page .zy_active{
+    background: #4381e6;
+    color: #fff;
+}
+main .zy_content .zy_details .zy_page .zy_active>a{
+    color: #fff;
+}
+main .zy_content .zy_details .zy_page .zy_ellipsis{
+    width: 29px;
+    height: 27px;
+    padding: 24px 3px 0 3px;
+    float: left;
+    margin-right: 9px;
+}
+main .zy_content .zy_details .zy_page .zy_ellipsis .zy_dotted{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background:#8d8d8d;
+    margin-right: 2px; 
+    float: left;
+}
+main .zy_content .zy_details .zy_page .zy_ellipsis .zy_dotted:nth-child(6){
+    margin-right: 0px;
+}
+main .zy_content .zy_details .zy_page .zy_last{
+    width: 81px;
+    height: 27px;
+    border-radius: 2px;
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    line-height: 27px;
+    float: left;
+}
+main .zy_content .zy_details .zy_page a{
+    color:#8d8d8d; 
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    font-size: 12px;
+    color: #cbcbcb;
+    text-align: center;
+    line-height: 50px;
+}

@@ -1,0 +1,776 @@
+html{
+    background: #f1f4f9;
+}
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    padding: 0 15px 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .left{
+    display: flex;
+}
+header .left img{
+    width: 35px;
+    height: 36px;
+}
+header .left h1{
+    font-family:"苹方";
+    font-size: 16px;
+    color: #fff;
+    margin-left: 12px;
+    line-height: 36px;
+}
+header .right{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right img{
+    width: 28px;
+    height: 28px;
+}
+header .right h2{
+    font-family:"苹方";
+    font-size: 16px;
+    color: #fff;
+    margin-left: 7px;
+    line-height: 36px;
+}
+header .right .icon{
+    width: 10px;
+    height: 10px;
+    margin-left: 12px;
+}
+header .right .icon i{
+    font-size: 5px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+main{
+    height: 660px;
+    display: flex;
+}
+main .list{
+    background: #fff;
+
+}
+main .list  p{
+    font-family:"苹方";
+    font-size: 14px;
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #f4f4f4;
+    width: 180px;
+    height: 39px;
+}
+main .list  p:hover{
+    cursor: pointer;
+}
+main .list  p.active{
+    color:#4381e6 ;
+    background: rgba(67,129,230,0.1);
+    border-right: 2px solid #4381e6;
+}
+
+
+/*右侧内容css*/
+main .WH_content{
+    width:  calc(100% - 180px);
+    /*background: #000;*/
+    padding:15px;
+    box-sizing: border-box;
+}
+
+/*弹出框遮盖*/
+.WH_Cover{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    margin:auto;
+    width: 100%;
+    height: 768px;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+}
+
+/*新建学生*/
+.WH_Cover .study{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    margin:auto;
+    width: 323px;
+    height: 434px;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 1;
+    transition: all .5s;
+}
+.WH_Cover .studyCover{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:-600px;
+    margin:auto;
+    width: 300px;
+    height: 150px;
+    background-color: #4381e6;
+    color: #fff;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 4px;
+    font-size: 20px;
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s;
+}
+.WH_Cover .studyCover .icon{
+    position: absolute;
+    right: 20px;
+    top:-50px;
+    z-index: 3;
+}
+.WH_Cover .study .top{
+    width: 100%;
+    height: 38px;
+    padding:14px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.WH_Cover .study .top .title{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.8);
+}
+.WH_Cover .study .top .icon img{
+    width: 9px;
+    height: 9px;
+}
+.WH_Cover .study hr{
+    margin:0;
+    width: 323px;
+    height: 1px;
+    background-color: #ececec;
+    opacity: 0.6;
+}
+.WH_Cover .study ul{
+    padding:10px 35px;
+}
+.WH_Cover .study ul li{
+    height: 29px;
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+}
+.WH_Cover .study ul li .name{
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.6);
+}
+.WH_Cover .study ul li input{
+    margin-right: 2px;
+    width: 176px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    outline: none;
+}
+.WH_Cover .study .bottom{
+    padding:16px 71px;
+    display: flex;
+    justify-content: space-between;
+}
+.WH_Cover .study .bottom .save{
+    width: 82px;
+    height: 29px;
+    background-color: #4381e6;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.WH_Cover .study .bottom .cancel{
+    width: 82px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+/*批量导入*/
+.WH_Cover .port{
+    position: absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    margin:auto;
+    width: 393px;
+    height: 190px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    opacity: 0;
+}
+.WH_Cover .port .top{
+    width: 100%;
+    height: 38px;
+    padding:15px 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.WH_Cover .port .top .title{
+    margin-left: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #000000;
+    opacity: 0.8;
+}
+.WH_Cover .port .top .icon img{
+    width: 9px;
+    height: 9px;
+}
+.WH_Cover .port hr{
+    margin:0;
+    width: 100%;
+    height: 1px;
+    background-color: #ececec;
+    opacity: 0.6;
+}
+.WH_Cover .port .bottom{
+    padding:27px 49px;
+    width: 100%;
+}
+.WH_Cover .port .bottom ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+}
+.WH_Cover .port .bottom ul li .icon{
+    line-height: 29px;
+}
+.WH_Cover .port .bottom ul li .icon img{
+    width: 11px;
+    height: 11px;
+}
+.WH_Cover .port .bottom ul li p{
+    width: 173px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: rgba(0,0,0,0.4);
+    line-height: 29px;
+}
+.WH_Cover .port .bottom ul li .load{
+    width: 82px;
+    height: 29px;
+    background-color: #4381e6;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.WH_Cover .port .bottom ul li .imp{
+    width: 82px;
+    height: 29px;
+    background-color: #4381e6;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-right: 6px;
+    cursor: pointer;
+}
+    /*弹出框结束*/
+
+    /*上方搜索信息栏*/
+main .WH_content .manage{
+    width:100%;
+    height: 110px;
+    margin: 0 auto ;
+    padding: 22px 29px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+main .WH_content .manage .account{
+    height: 14px;
+    width: 100%;
+    display: flex;
+}
+main .WH_content .manage .account .icon{
+    width: 2px;
+    height: 11px;
+    margin-left: 1px;
+    background-image: linear-gradient(0deg,
+    #30c2fb 0%,
+    #6787ff 100%),
+    linear-gradient(
+            #ff5757,
+            #ff5757);
+    background-blend-mode: normal,
+    normal;
+    margin-top: 2px;
+}
+main .WH_content .manage .account h2{
+
+    height: 14px;
+    /*font-family: "PingFang-SC-Heavy";*/
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.6);
+    line-height: 14px;
+    margin-left: 8px;
+}
+main .WH_content .manage .bottom{
+    margin-top: 22px;
+    width: 100%;
+    height: 29px;
+    display: flex;
+}
+/*登录名*/
+main .WH_content .manage .bottom .select{
+    width: 94px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(0,0,0,0.4);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+main .WH_content .manage .bottom .select .icon{
+    width: 5px;
+    height: 5px;
+}
+main .WH_content .manage .bottom .select .icon img{
+    width: 5px;
+    height: 5px;
+}
+main .WH_content .manage .bottom input{
+    width: 188px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    margin-left: 8px;
+    display: block;
+    box-sizing: border-box;
+}
+/*搜索学生*/
+main .WH_content .manage .bottom .Inquire{
+    width: 111px;
+    height: 29px;
+    background-color: #4381e6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 29px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/*新建学生*/
+main .WH_content .manage .bottom .new{
+    width: 111px;
+    height: 29px;
+    background-color: #4381e6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left:64px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 29px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+/*批量导入*/
+main .WH_content .manage .bottom .Importing{
+    width: 111px;
+    height: 29px;
+    background-color: #4381e6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left:8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 29px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+/*下方用户表*/
+main .WH_content .user{
+    margin-top: 11px;
+    width: 100%;
+    height: 433px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding:19px 24px;
+}
+main .WH_content .user .name{
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+main .WH_content .user .name .img{
+    display: flex;
+}
+main .WH_content .user .name .button{
+    display: flex;
+}
+main .WH_content .user .name p{
+    height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color:rgba(0,0,0,0.6);
+    margin-left: 8px;
+}
+main .WH_content .user .name .del{
+    width: 82px;
+    height: 29px;
+    background-color: #4381e6;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+}
+main .WH_content .user .name .ren{
+    width: 82px;
+    height: 29px;
+    background-color: #25cb77;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin:0 29px 0 8px;
+    cursor: pointer;
+}
+
+/*表单*/
+main .WH_content .user .list{
+    width: 100%;
+    height: 294px;
+    padding: 21px 6px;
+}
+main .WH_content .user .list .table{
+    width: 100%;
+    height: 222px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+}
+/*表头*/
+main .WH_content .user .list .table .top{
+    width: 100%;
+    height: 57px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 57px;
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+}
+/*复选框*/
+main .WH_content .user .list .table .top .checkbox{
+    width: 62px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+
+}
+/*#region checkbox样式 */
+
+main .WH_content .user .list .table .top .checkbox span {
+    position: relative;
+    display: block;
+
+    /*margin: 20px 100px;*/
+}
+
+main .WH_content .user .list .table .top .checkbox span input {
+    display: none;
+}
+
+main .WH_content .user .list .table .top .checkbox span label { /*label标签用于Click事件和我们要定义的复选框的方框样式。*/
+    padding-left: 12px;
+    cursor: pointer;
+    position: absolute;
+    height: 15px;
+    top: 21px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    width: 15px;
+    background: #fff;
+    border: 1px solid #4381e6;
+    border-radius: 4px;
+}
+
+
+/*创建方框中的对勾，对于这一点，我们可以使用:after伪类创建一个新的元素，
+为了实现这个样式，我们可以创建一个5px x 9px的长方形并给他加上边框。
+这时候我们去掉上面和右边的边框之后，它会看起来像一个字母L。
+然后我们可以使用CSS的transform属性让它旋转一下，这样看起来就像是一个对勾。*/
+main .WH_content .user .list .table .top .checkbox span label::after {
+    content: '';
+    opacity: 0; /*设置复选框标签透明度0,透明的对勾 下面悬停时候加深*/
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 0;
+    left: 0;
+    border: 3px solid #333;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+main .WH_content .user .list .table .top .checkbox label:hover::after{
+    opacity: 0.5;
+}
+
+main .WH_content .user .list .table .top .checkbox input[type=checkbox]:checked + label:after {
+    /*checkbox选中后，设置相邻元素对勾为不透明*/
+    opacity: 1;
+}
+main .WH_content .user .list .table  .bottom .content .checkbox input[type=checkbox]:checked + label:after {
+    /*checkbox选中后，设置相邻元素对勾为不透明*/
+    opacity: 1;
+}
+/*#endregion */
+
+/*登录名*/
+main .WH_content .user .list .table .top .login{
+    width: 108px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+
+
+}
+/*姓名*/
+main .WH_content .user .list .table .top .name{
+    width: 97px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*学号*/
+main .WH_content .user .list .table .top .id{
+    width: 97px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+}
+/*性别*/
+main .WH_content .user .list .table .top .sex{
+    width: 78px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+}
+/*专业*/
+main .WH_content .user .list .table .top .pro{
+    width: 191px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+}
+/*院校*/
+main .WH_content .user .list .table .top .aca{
+    width: 158px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+}
+/*班级*/
+main .WH_content .user .list .table .top .class{
+    width: 157px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+}
+/*操作*/
+main .WH_content .user .list .table .top .ope{
+    width: 168px;
+    height: 57px;
+    border: solid 1px #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .WH_content .user .list .table .ope .del{
+    width: 82px;
+    height: 29px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    line-height: 29px;
+    cursor: pointer;
+}
+/*上传表单内容位置*/
+main .WH_content .user .list .table .bottom{
+    width: 100%;
+    height: 171px;
+    /*overflow-y: scroll;*/
+}
+main .WH_content .user .list .table .bottom .content{
+    width: 100%;
+    height:auto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    text-align: center;
+    line-height: 125px;
+    letter-spacing: 0;
+    color: rgba(0,0,0,0.6);
+}
+/*表单结束*/
+
+/*页码*/
+main .WH_content .user .page{
+    width: 100%;
+    padding:24px  291px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 29px;
+    letter-spacing: 0;
+    color: rgba(0,0,0,0.4);
+}
+/*上一页*/
+main .WH_content .user .page .pageUp{
+    width: 97px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    margin-left:5px;
+}
+/*页码*/
+main .WH_content .user .page .pageNode{
+    width: 29px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+}
+/*页码选中*/
+main .WH_content .user .page .pageNode.active{
+    background-color: #4381e6;
+    color:#fff;
+}
+main .WH_content .user .page p{
+    line-height: 40px;
+    width: 21px;
+}
+/*下一页*/
+main .WH_content .user .page .pageDown{
+    width: 97px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    opacity: 0.98;
+}
+/*尾页*/
+main .WH_content .user .page .end{
+    width: 81px;
+    height: 29px;
+    border-radius: 4px;
+    border: solid 1px #f4f4f4;
+    opacity: 0.98;
+}
+
+/*底部*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.4);
+}

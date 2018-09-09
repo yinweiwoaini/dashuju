@@ -1,0 +1,497 @@
+html{
+    background: #f1f4f9;
+}
+header{
+    width: 100%;
+    height: 58px;
+    background: #4381e6;
+    padding: 0 15px 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .left{
+    display: flex;
+}
+header .left img{
+    width: 35px;
+    height: 36px;
+}
+header .left h1{
+    font-family:"苹方";
+    font-size: 16px;
+    color: #fff;
+    margin-left: 12px;
+    line-height: 36px;
+}
+header .right{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right img{
+    width: 28px;
+    height: 28px;
+}
+header .right h2{
+    font-family:"苹方";
+    font-size: 16px;
+    color: #fff;
+    margin-left: 7px;
+    line-height: 36px;
+}
+header .right .icon{
+    width: 10px;
+    height: 10px;
+    margin-left: 12px;
+}
+header .right .icon i{
+    font-size: 5px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+}
+
+main{
+    height: 660px;
+    display: flex;
+}
+main .list{
+    background: #fff;
+
+}
+main .list  p{
+    font-family:"苹方";
+    font-size: 14px;
+    color: #8d8d8d;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #f4f4f4;
+    width: 180px;
+    height: 39px;
+}
+main .list  p:hover{
+    cursor: pointer;
+}
+main .list  p.active{
+    color:#4381e6 ;
+    background: rgba(67,129,230,0.1);
+    border-right: 2px solid #4381e6;
+}
+/*右侧内容css*/
+
+main .shy_content{
+    width:calc(100% - 180px);
+    height:531px;
+    background-color: white;
+    margin: 15px ;
+    border-radius: 4px;
+}
+main .shy_content .container{
+    margin: 20px 30px; /*background:yellow ;*/
+}
+main .shy_content .acount{
+    width: 100%;
+    height: 16px;
+    /*background: pink;*/
+}
+main .shy_content .acount .icont{
+    width: 2px;
+    height: 11px;
+    background-image: linear-gradient(0deg, #30c2fb 0%, #6787ff 100%), linear-gradient(#ff5757, #ff5757);
+    background-blend-mode: normal, normal;
+    margin:2px  0;
+    float: left;
+}
+main .shy_content h2{
+    height: 14px;
+    float: left;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 8px;
+    color: rgba(0,0,0,0.6);
+}
+main .shy_content .severtime{
+    width: 100%;
+    height: 135px;
+    /*background: #30c2fb;*/
+    margin-top: 15px;
+}
+main .shy_content .severtime ul li{
+    width:135px ;
+    height:135px;
+    /*background: red;*/
+    float: left;
+    margin-left: 15px;
+    overflow: hidden;
+    border: 1px solid #f3f3f4;
+}
+main .shy_content .severtime  ul li .day{
+    width:100%;
+    heght:56px;
+    margin: 15px auto 0;
+    text-align: center;
+}
+main .shy_content .severtime  ul li .day span{
+    color: #31ca78;
+    font-size: 40px;
+}
+main .shy_content .severtime  ul li .day  .dt {
+    font-size: 14px;
+}
+main .shy_content .severtime  ul li .money{
+    width: 100%;
+    height: 14px;
+    /*background: #30c2fb;*/
+    text-align: center;
+    line-height: 14px;
+    margin-top: 5px;
+}
+main .shy_content .severtime  ul li .money p{
+    font-size: 14px;
+    color: #989898;
+}
+main .shy_content .date{
+    width:100%;
+    height: 64px;
+    /*background: #31ca78;*/
+    margin-top: 15px;
+}
+main  .shy_content .date .list{
+    height: 32px;
+}
+main  .shy_content .date .list h2{
+    height: 32px;
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 8px;
+    color: rgba(0,0,0,0.6);
+}
+main  .shy_content .date .list .list-first{
+    width: 134px;
+    height: 32px;
+    /*background: #30c2fb;*/
+    text-align: center;
+    line-height: 32px;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #f3f3f4;
+}
+main  .shy_content .date .list .list-first .tit{
+    height: 32px;
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 55px;
+    color: rgba(0,0,0,0.6);
+}
+main  .shy_content .date .list .list-first h3{
+    font-size: 14px;
+    color: #ebebeb;
+}
+main  .shy_content .date .list .list-first h3 i{
+    font-size: 12px;
+    color: #4281e8;
+}
+main .shy_content  .bottom{
+    height: 32px;
+    display: flex;
+    margin-left: 95px;
+}
+main .shy_content  .bottom  .radio{
+    width: 18px;
+    height: 18px;
+    background: #1fc66e;
+    border-radius: 4px;
+    margin: auto 0;
+
+}
+main .shy_content  .bottom  .radio i{
+    font-size: 8px;
+    color: white;
+    display: block;
+    line-height: 18px;
+    text-align: center;
+}
+main .shy_content  .bottom  span{
+    font-size: 14px;
+    line-height:32px ;
+    padding-left: 15px;
+    color: #cacaca;
+}
+
+main  .shy_content .people {
+    height: 32px;
+    width: 100%;
+    margin-top: 15px;
+}
+main  .shy_content .people  h2{
+    height: 32px;
+    float: left;
+    font-size: 14px;
+    line-height: 32px;
+    padding-left: 8px;
+    color: rgba(0,0,0,0.6);
+}
+main  .shy_content .people .list-pe{
+    width: 78px;
+    height: 32px;
+    border: 1px solid #f3f3f4;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #cacaca;
+    float: left;
+    margin-left: 10px;
+}
+main  .shy_content .people span{
+    font-size: 14px;
+    color: #cacaca;
+    line-height: 32px;
+    padding-left: 35px;
+}
+main  .shy_content .type{
+    height: 80px;
+    width: 100%;
+}
+main  .shy_content .type .ner{
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main  .shy_content .type .ner .money-first{
+    width: 93px;
+    height: 40px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+main .shy_content .type   h2{
+    height: 40px;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 8px;
+    color: rgba(0,0,0,0.6);
+}
+main  .shy_content .type .ner  .money-first  p{
+    font-size: 14px;
+    color: #989898;
+    line-height:50px;
+}
+main  .shy_content .type .ner  .money-first h5{
+    font-size: 40px;
+    line-height: 40px;
+    color:#31ca78 ;
+}
+main  .shy_content .type .ner   span{
+    font-size: 14px;
+    color: #cacaca;
+    line-height: 50px;
+    padding-left: 20px;
+}
+main  .shy_content .type .ner-frist{
+    height: 32px;
+    margin-left: 95px;
+    display: flex;
+    flex-wrap: wrap;
+}
+main  .shy_content .type .ner-frist  .radior{
+    width: 18px;
+    height: 18px;
+    background: #1fc66e;
+    border-radius: 4px;
+    margin: auto 0;
+}
+main  .shy_content .type .ner-frist  .radior i {
+    font-size: 8px;
+    color: white;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+}
+main  .shy_content .type .ner-frist   span{
+    font-size: 14px;
+    line-height:32px ;
+    padding-left: 15px;
+    color: #cacaca;
+}
+main .buttom{
+    width:117px ;
+    height: 32px;
+    background: #314fff;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border-radius: 4px;
+    margin: 40px 0  0 90px;
+}
+.shy_zz{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.shy_zz  .shy_fap{
+    width: 586px;
+    height: 483px;
+    background: white;
+    border-radius: 4px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.shy_zz  .shy_fap .ner{
+    height: 40px;
+    /*background: red;*/
+    overflow: hidden;
+    border-bottom: 1px solid #f5f5f5;
+}
+.shy_zz  .shy_fap .ner .list{
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.shy_zz  .shy_fap .ner .list h2{
+    font-size: 14px;
+    color: #545454;
+    line-height: 14px;
+}
+.shy_zz  .shy_fap .ner .list .icon{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+
+}
+.shy_zz  .shy_fap .ner .list .icon i{
+    display: block;
+    font-size: 10px;
+    line-height: 14px;
+    color:#e8e8e8 ;
+}
+.shy_zz  .shy_fap .list-ner{
+    width: 100%;
+    height:calc(100% - 40px);
+}
+.shy_zz  .shy_fap .list-ner .action{
+    width: 100%;
+    height: 14px;
+    display:flex ;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    margin-top: 25px;
+}
+.shy_zz  .shy_fap .list-ner .action h2{
+    font-size: 14px;
+    color: #909090;
+    line-height: 14px;
+}
+.shy_zz  .shy_fap .list-ner .action h2 span{
+    color: #c5c5c5;
+}
+.shy_zz  .shy_fap .list-ner .open{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    margin-top: 15px;
+}
+.shy_zz  .shy_fap  h2{
+    font-size: 14px;
+    color: #909090;
+    line-height:30px;
+}
+.shy_zz  .shy_fap .list-ner .open  ul li{
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+    margin-right:15px ;
+}
+.shy_zz  .shy_fap .list-ner .open  ul li:nth-child(1){
+    width: 82px;
+    color:#6373fc;
+}
+.shy_zz  .shy_fap .list-ner .open  ul li:nth-child(2){
+    width: 82px;
+    color: #70c5fe;
+}
+.shy_zz  .shy_fap .list-ner .open  ul li:nth-child(3){
+    width: 112px;
+    color:#66e5c7;
+}
+.shy_zz  .shy_fap .list-ner .open  ul li:nth-child(4){
+    width: 112px;
+    color: #48cc83;
+}
+.shy_zz  .shy_fap .topp{
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+}
+.shy_zz  .shy_fap .topp  .text{
+    width: 423px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    border: 1px solid #f3f3f3;
+    margin-left: 35px;
+}
+.shy_zz  .shy_fap .topp  .text1{
+    width: 388px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    border: 1px solid #f3f3f3;
+    margin-left: 8px;
+}
+.shy_zz  .shy_fap .topp  .text2{
+    width: 167px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    border: 1px solid #f3f3f3;
+    margin-left: 22px;
+}
+.shy_zz  .shy_fap .topp  .text3{
+    width: 175px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    background: none;
+    border: 1px solid #f3f3f3;
+    margin-left: 10px;
+}
+.shy_zz .shy_fap .buttom{
+    width: 204px;
+    height: 30px;
+    background:#4381e6;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 4px;
+    margin: 30px auto 0;
+    color: white;
+}
